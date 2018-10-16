@@ -1,8 +1,10 @@
 // @flow
 
-import React from 'react'
-import TopContainer from '../TopContainer'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from 'react'
+
+import QrSessionContainer from '../QrSessionContainer'
+import TopContainer from '../TopContainer'
 
 class App extends React.Component<*> {
   render() {
@@ -10,6 +12,7 @@ class App extends React.Component<*> {
       <Router>
         <div>
           <Route exact path={'/'} component={TopContainer} />
+          <Route exact path={'/qr'} component={QrSessionContainer} />
         </div>
       </Router>
     )

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import ReactDOM from 'react-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { MuiThemeProvider } from '@material-ui/core/styles'
+import registerServiceWorker from './registerServiceWorker'
 
 import App from './containers/App'
 import configureStore from './store'
@@ -28,3 +29,4 @@ if (root) {
     root,
   )
 }
+registerServiceWorker()
