@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "profile": "default",
+  "regions": ["ap-northeast-1"],
+  "type": "static",
+  "static": {
+    "dir": "build"
+  },
+  "hooks": {
+    "build": "npm run build",
+    "clean": "rm -fr build"
+  },
+  "stages": {
+    "production": {
+      "domain": "app.elzup.org",
+      "path": "/"
+    }
+  }
+}
