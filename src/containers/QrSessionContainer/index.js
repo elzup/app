@@ -6,6 +6,8 @@ import { connect } from 'react-redux'
 import QrReader from 'react-qr-reader'
 import QRCode from 'qrcode.react'
 
+import { Helmet } from 'react-helmet'
+
 import type { State as RootState } from '../../types'
 import { readText, updateSendText } from './logic'
 
@@ -23,12 +25,29 @@ type Props = {
   onChangeSendText: typeof updateSendText,
 }
 
+const description = 'qr session spa'
+
 class QrSessionContainer extends React.Component<Props> {
   render() {
     const { props } = this
     return (
       <Grid container justify={'center'}>
         <Grid item xs={12} sm={12} md={10}>
+          <Helmet
+            title={'Qr experiments'}
+            meta={[
+              { name: 'description', content: description },
+              { property: 'og:title', content: 'Qr ex' },
+              { property: 'og:type', content: 'website' },
+              { property: 'og:url', content: 'https://app.elzup.org/#/qr' },
+              {
+                property: 'og:image',
+                content: 'https://pbs.twimg.com/media/DlxVxu7UUAQjl_I.jpg',
+              },
+              { property: 'og:description', content: description },
+              { name: 'twitter:card', content: 'summary' },
+            ]}
+          />
           <Paper>
             <Grid container justify={'center'}>
               <Grid item xs={12} sm={6}>
