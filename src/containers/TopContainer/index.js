@@ -1,8 +1,9 @@
 // @flow
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import * as React from 'react'
+import { Grid, Paper } from '@material-ui/core'
 
-import { Grid } from '@material-ui/core'
 import type { State as RootState } from '../../types'
 
 // import * as selectors from './selectors'
@@ -18,7 +19,21 @@ class TopContainer extends React.Component<Props> {
     return (
       <div>
         <Grid container justify={'center'}>
-          <Grid item xs={12} sm={10} />
+          <Grid item xs={12} sm={10}>
+            <Paper>
+              <ul>
+                <li>
+                  <Link to={'/qr'}>Qr session</Link>
+                </li>
+                <li>
+                  <Link to={'/canvas'}>Canvas</Link>
+                </li>
+                <li>
+                  <Link to={'/urlscheme'}>Url scheme</Link>
+                </li>
+              </ul>
+            </Paper>
+          </Grid>
         </Grid>
       </div>
     )
