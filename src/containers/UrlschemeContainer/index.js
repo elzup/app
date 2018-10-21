@@ -17,8 +17,7 @@ class UrlschemeContainer extends React.Component<Props> {
           <Paper>
             <ul>
               <li>
-                <a href="">iOS config</a>
-                <a href="">Android config</a>
+                <a href="app-Prefs:root=General&path=About">iOS config</a>
               </li>
             </ul>
           </Paper>
