@@ -40,10 +40,6 @@ class QrSessionContainer extends React.Component<Props> {
               { property: 'og:title', content: 'Qr ex' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', content: 'https://app.elzup.org/#/qr' },
-              {
-                property: 'og:image',
-                content: 'https://pbs.twimg.com/media/DlxVxu7UUAQjl_I.jpg',
-              },
               { property: 'og:description', content: description },
               { name: 'twitter:card', content: 'summary' },
             ]}
