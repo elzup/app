@@ -5,6 +5,7 @@ import { getCanvasObjects } from './selectors'
 import { updateObjects } from './actions'
 import type { State as RootState } from '../../types'
 // import * as selectors from './selectors'
+// import Fabric from 'fabric'
 
 export type CanvasObjects = Object[]
 
@@ -13,14 +14,10 @@ type Props = {
   updateObjects: typeof updateObjects,
 }
 
-const C = (props: Props) => {
-  return <div />
-}
-
 class ReceiptCanvas extends React.Component<Props> {
   render() {
     const { props } = this
-    return C(props)
+    return <div>wip</div>
   }
 }
 
