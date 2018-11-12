@@ -1,6 +1,7 @@
 // @flow
 import type { Action as AuthAction } from '../containers/Auth/actionTypes'
 import type { Action as QrSessionContainerAction } from '../containers/QrSessionContainer/actionTypes'
+import type { Action as ReceiptCanvasAction } from '../containers/ReceiptCanvas/actionTypes'
 import type { Action as SystemAction } from '../containers/System/actionTypes'
 import type { Action as UserByIdAction } from '../containers/UserById/actionTypes'
 
@@ -12,5 +13,6 @@ export type Action =
   | ReduxInitAction
   | AuthAction
   | QrSessionContainerAction
+  | ReceiptCanvasAction
   | SystemAction
   | UserByIdAction

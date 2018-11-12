@@ -31,6 +31,9 @@ class TopContainer extends React.Component<Props> {
                 <li>
                   <Link to={'/urlscheme'}>Url scheme</Link>
                 </li>
+                <li>
+                  <Link to={'/receipt'}>Receipt canvas maker</Link>
+                </li>
               </ul>
             </Paper>
           </Grid>
