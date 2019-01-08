@@ -8,6 +8,7 @@ import CanvasContainer from '../CanvasContainer'
 import TopContainer from '../TopContainer'
 import UrlschemeContainer from '../UrlschemeContainer'
 import ReceiptCanvas from '../ReceiptCanvas'
+import NippleContainer from '../NippleContainer'
 
 class App extends React.Component<*> {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component<*> {
         <div>
           <Route exact path={'/'} component={TopContainer} />
           <Route exact path={'/qr'} component={QrSessionContainer} />
+          <Route exact path={'/punicon'} component={NippleContainer} />
           <Route exact path={'/canvas'} component={CanvasContainer} />
           <Route exact path={'/urlscheme'} component={UrlschemeContainer} />
           <Route exact path={'/receipt'} component={ReceiptCanvas} />
